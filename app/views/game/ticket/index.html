@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>farmWap</title>
+		<!-- metatags -->
+		<meta name="keywords" content="网页关键字" /> 
+		<meta name="description" content="网页描述文字" /> 
+		<!-- **** Viewport **** -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="../../common/style/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../common/style/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/style/style.css"/>
+		<!-- JS -->
+	  	<script type="text/javascript" src="../../common/scripts/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../common/scripts/script.js"></script>
+	</head>
+	<body class="bodyBlue bodyFlex">
+		<header id="header">
+			<div class="header">
+				<span class="ico_back"></span>
+				<h1>菜票流转</h1>
+			</div>
+		</header>
+		<div class="container h_hd boxBg_2">
+			<div class="boxCon">
+				<ul class="listBox">
+					<li><span>对方帐号</span><span class="ico_arrow"></span></li>
+					<li onclick="show('boxPop')"><span>流转数量</span><span class="ico_arrow"></span></li>
+					<li><span>支付密码</span><span class="ico_arrow"></span></li>
+				</ul>
+				<button class="btnG_max">菜票流转</button>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="footer">
+				<ul class="gameFoot">
+					<li><a href="javascript:void(0);">
+						<em class="ico_my"></em>
+						<p>我的菜</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_warehouse"></em>
+						<p>我的仓库</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_market"></em>
+						<p>菜市场</p>
+					</a></li>
+					<li class="cur"><a href="javascript:void(0);">
+						<em class="ico_money"></em>
+						<p>我的财</p>
+					</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- wrap_float -->
+        <div id="boxPop" class="boxPop">
+			<div class="flBox">
+				<h3>提示</h3>
+				<div class="flBoxCon">
+					<p>彩票流转失败：帐号填写错误</p>
+				</div>
+				<button class="btn_confirm" onclick="hide('boxPop')">确定</button>
+			</div>
+		</div>
+	</body>
+</html>

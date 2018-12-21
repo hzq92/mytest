@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span,applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, main,menu, nav, section, summary, time, mark, audio, video {
+    margin:0; padding:0; border:0; outline:0; vertical-align: baseline; background:transparent;
+}
+html{ font-size:62.5%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+body {
+  font-size:12px;
+  font-size:1.2rem;
+  color:#333;
+  -webkit-text-size-adjust:none;
+   height: 100%; 
+ /*-webkit-overflow-scrolling: touch;*/
+}
+@font-face {
+  font-family: 'MyFont';
+  src: url('../../fonts/founder_simplified_cartoon.ttf');
+}
+body, input, textarea, button, select{
+	font-family: 'MyFont';
+}
+.cal_panel {
+	cursor: default;
+	text-align: center;
+	position: absolute;
+	top: 15%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 0 5%;
+	width: 66.7%;
+}
+.cal_panel h3{
+	font-size: 12px;
+	font-size: 1.2rem;
+	margin: 0 auto;
+	padding: 4% 0;
+	background: #40b611;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+	position: relative;
+	line-height: 1;
+}
+.cal_panel h3:before, .cal_panel h3:after{
+	display: block;
+	content: '';
+	width: 19px;
+	height: 28px;
+	position: absolute;
+	top: 15%;
+}
+.cal_panel h3:before{
+	background: url(../../images/ttl_l.png) no-repeat left top/auto 28px;
+	left: -18px;
+}
+.cal_panel h3:after{
+	background: url(../../images/ttl_r.png) no-repeat right top/auto 28px;
+	right: -18px;
+}
+.cal_panel #py, .cal_panel #pm, .cal_panel #ny, .cal_panel #nm {
+	display: none;
+}
+.cal_panel #date {
+	cursor: default;
+	background: #55c928;
+	color: #fff;
+}
+.cal_panel #year{
+	display: block;
+	opacity: .34;
+	font-size: 18px;
+	font-size: 1.8rem;
+	padding-top: 5%;
+}
+.cal_panel .cal_month{
+	padding-top: 5%;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+.cal_panel #day{
+	display: block;
+	font-size: 49px;
+	font-size: 4.9rem;
+}
+.cal_panel table{
+	text-align: center;
+	font-size: 12px;
+    font-size: 1.2rem;
+}
+.cal_panel table thead {
+    color: #333;
+    font-size: 14px;
+    font-size: 1.4rem;
+}
+.cal_panel tbody td {
+	padding: 2.5%;
+    vertical-align: middle;
+    color: #333;
+}
+.cal_panel .tdday {}
+.cal_panel .tday{
+	position: relative;
+}
+.cal_panel .tday span, .cal_panel .over span{
+	display: inline-block;
+	background: #ffd10f;
+	border-radius: 50%;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	color: #fff;
+	line-height: 1.5;
+}
+
+.btnS_o{
+	background: url(../../images/btnS_o.png) no-repeat center center;
+}
+.btnS_g{
+	background: url(../../images/btnS_g.png) no-repeat center center;
+}
+.btnS_o, .btnS_g{
+	width: 44%;
+}
+.btnS_o, .btnS_g{
+	height: 32px;
+	line-height: 1;
+	color: #fff;
+	background-size: contain;
+	font-size: 10px;
+	font-size: 1.0rem;
+}
+.btnPop{
+	padding-top: 5%;
+}
+.btnPop button{
+	border: 0;
+	margin-right: 7%;
+}
+.btnPop button:last-of-type{
+	margin-right: 0;
+}
+
+/*iphone6*/
+@media (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){
+	.cal_panel h3{
+		font-size: 14px;
+		font-size: 1.4rem;
+	}
+	.cal_panel h3:before, .cal_panel h3:after{
+		width: 24px;
+		height: 35px;
+	}
+	.cal_panel h3:before{
+		background-size: auto 35px;
+		left: -23px;
+	}
+	.cal_panel h3:after{
+		background-size: auto 35px;
+		right: -23px;
+	}
+	.cal_panel #year{
+		font-size: 21px;
+		font-size: 2.1rem;
+	}
+	.cal_panel .cal_month{
+		font-size: 18px;
+		font-size: 1.8rem;
+	}
+	.cal_panel #day{
+		font-size: 58px;
+		font-size: 5.8rem;
+	}
+	.cal_panel table{
+		font-size: 14px;
+	    font-size: 1.4rem;
+	}
+	.cal_panel table thead {
+	    font-size: 16px;
+	    font-size: 1.6rem;
+	}
+
+	.btnS_o, .btnS_g{
+		height: 38px;
+		font-size: 12px;
+		font-size: 1.2rem;
+	}
+}
+
+/*iphone6plus*/
+@media (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){
+	.cal_panel h3{
+		font-size: 15px;
+		font-size: 1.5rem;
+	}
+	.cal_panel h3:before, .cal_panel h3:after{
+		width: 26px;
+		height: 39px;
+	}
+	.cal_panel h3:before{
+		background-size: auto 39px;
+		left: -26px;
+	}
+	.cal_panel h3:after{
+		background-size: auto 39px;
+		right: -26px;
+	}
+	.cal_panel #year{
+		font-size: 23px;
+		font-size: 2.3rem;
+	}
+	.cal_panel .cal_month{
+		font-size: 21px;
+		font-size: 2.1rem;
+	}
+	.cal_panel #day{
+		font-size: 63px;
+		font-size: 6.3rem;
+	}
+	.cal_panel table{
+		font-size: 15px;
+	    font-size: 1.5rem;
+	}
+	.cal_panel table thead {
+	    font-size: 18px;
+	    font-size: 1.8rem;
+	}
+
+	.btnS_o, .btnS_g{
+		height: 42px;
+		font-size: 13px;
+		font-size: 1.3rem;
+	}
+}

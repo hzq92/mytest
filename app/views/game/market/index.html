@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>farmWap</title>
+		<!-- metatags -->
+		<meta name="keywords" content="网页关键字" /> 
+		<meta name="description" content="网页描述文字" /> 
+		<!-- **** Viewport **** -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="../../common/style/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../common/style/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/style/style.css"/>
+		<!-- JS -->
+	  	<script type="text/javascript" src="../../common/scripts/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../common/scripts/script.js"></script>
+	</head>
+	<body class="bodyBlue bodyFlex">
+		<header id="header">
+			<div class="header">
+				<h1>菜市场</h1>
+			</div>
+		</header>
+		<div class="container h_hd containBox">
+			<ul class="marketNav">
+				<li onclick="show('boxPop')"><a href="javascript:void(0);"><span class="txtShad">卖蛋</span><span class="ttlTxt">卖蛋</span></a></li>
+				<li onclick="show('boxPop2')"><a href="javascript:void(0);"><span class="txtShad">买蛋</span><span class="ttlTxt">买蛋</span></a></li>
+				<li onclick="show('boxPop3')"><a href="javascript:void(0);"><span class="txtShad">卖鸡</span><span class="ttlTxt">卖鸡</span></a></li>
+				<li onclick="show('boxPop4')"><a href="javascript:void(0);"><span class="txtShad">买鸡</span><span class="ttlTxt">买鸡</span></a></li>
+			</ul>
+			<div class="noticeBox">
+				<div class="notice">
+					<p>每天中午12：30——晚上20：00开市，开市时间接受买卖交易挂单，按挂单时间的先后次序撮合交易。当天交易没成功的晚上系统维护前自动撤单，原路返回：货物归仓，钱款入帐。</p>
+				</div>
+				<span class="bord_l_t"></span>
+				<span class="bord_r_t"></span>
+				<span class="bord_r_b"></span>
+				<span class="bord_l_b"></span>
+			</div>
+			<div class="comBox">
+				<h2>菜市场</h2>
+				<ul class="comTtl">
+					<li class="active">排队等候单</li>
+					<li>批发市场</li>
+				</ul>
+				<div class="comTabCont">
+					<div class="comTab dispBlock">
+						<table class="tabBor">
+							<tr>
+								<th>挂单时间</th>
+								<th>类型</th>
+								<th>昵称</th>
+								<th>数量</th>
+								<th>状态</th>
+							</tr>
+							<tr>
+								<td>12：35</td>
+								<td>卖鸡</td>
+								<td>安琪</td>
+								<td>100</td>
+								<td>等待成交</td>
+							</tr>
+							<tr>
+								<td class="colF60">12：35</td>
+								<td class="colF60">买鸡</td>
+								<td class="colF60">cdxd</td>
+								<td class="colF60">5</td>
+								<td class="colF60">等待成交</td>
+							</tr>
+							<tr>
+								<td>12：35</td>
+								<td>卖蛋</td>
+								<td>一线天</td>
+								<td>300</td>
+								<td>等待成交</td>
+							</tr>
+							<tr>
+								<td>12：35</td>
+								<td>卖鸡</td>
+								<td>美</td>
+								<td>500</td>
+								<td>等待成交</td>
+							</tr>
+							<tr>
+								<td>12：35</td>
+								<td>卖鸡</td>
+								<td>美</td>
+								<td>500</td>
+								<td>等待成交</td>
+							</tr>
+						</table>
+					</div>
+					<div class="comTab">
+						<table class="tabBor">
+							<tr>
+								<th>挂单时间</th>
+								<th>类型</th>
+								<th>昵称</th>
+								<th>数量</th>
+								<th>状态</th>
+							</tr>
+							<tr>
+								<td>12：35</td>
+								<td>卖鸡</td>
+								<td>美</td>
+								<td>500</td>
+								<td>等待成交</td>
+							</tr>
+							<tr>
+								<td>12：35</td>
+								<td>卖鸡</td>
+								<td>美</td>
+								<td>500</td>
+								<td>等待成交</td>
+							</tr>
+							<tr>
+								<td>12：35</td>
+								<td>卖鸡</td>
+								<td>安琪</td>
+								<td>100</td>
+								<td>等待成交</td>
+							</tr>
+							<tr>
+								<td class="colF60">12：35</td>
+								<td class="colF60">买鸡</td>
+								<td class="colF60">cdxd</td>
+								<td class="colF60">5</td>
+								<td class="colF60">等待成交</td>
+							</tr>
+							<tr>
+								<td>12：35</td>
+								<td>卖蛋</td>
+								<td>一线天</td>
+								<td>300</td>
+								<td>等待成交</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="boxTime">
+				<h3>挂单时间</h3>
+				<table>
+					<tr>
+							<td>12：35</td>
+							<td>卖鸡</td>
+							<td>安琪</td>
+							<td>100</td>
+							<td>等待成交</td>
+						</tr>
+						<tr>
+							<td class="colF60">12：35</td>
+							<td class="colF60">买鸡</td>
+							<td class="colF60">cdxd</td>
+							<td class="colF60">5</td>
+							<td class="colF60">等待成交</td>
+						</tr>
+						<tr>
+							<td>12：35</td>
+							<td>卖蛋</td>
+							<td>一线天</td>
+							<td>300</td>
+							<td>等待成交</td>
+						</tr>
+				</table>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="footer">
+				<ul class="gameFoot">
+					<li><a href="javascript:void(0);">
+						<em class="ico_my"></em>
+						<p>我的菜</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_warehouse"></em>
+						<p>我的仓库</p>
+					</a></li>
+					<li class="cur"><a href="javascript:void(0);">
+						<em class="ico_market"></em>
+						<p>菜市场</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_money"></em>
+						<p>我的财</p>
+					</a></li>
+				</ul>
+			</div>
+		</footer>
+		<div id="boxPop" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>出售商品蛋</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">仓库有商品鸡：0个</p>
+						<p class="colF60">出售价格：2元/个</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop2" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>购买种蛋</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop2')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">彩票余额：0.0元</p>
+						<p class="colF60">今日购买限额150个</p>
+						<p class="colGreen">种鸡价格：2元/个</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop2')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop3" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>出售商品鸡</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop3')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">仓库有商品鸡：0只</p>
+						<p class="colF60">出售价格：2.3元/只</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop3')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop4" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>购买种鸡</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop4')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">彩票余额：0.0元</p>
+						<p class="colF60">今日购买限额150只</p>
+						<p class="colGreen">种鸡价格：2.3元/只</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop4')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

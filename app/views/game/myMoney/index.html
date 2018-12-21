@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>farmWap</title>
+		<!-- metatags -->
+		<meta name="keywords" content="网页关键字" /> 
+		<meta name="description" content="网页描述文字" /> 
+		<!-- **** Viewport **** -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="../../common/style/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../common/style/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/style/style.css"/>
+		<!-- JS -->
+	  	<script type="text/javascript" src="../../common/scripts/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../common/scripts/script.js"></script>
+	</head>
+	<body class="bodyBlue_3 bodyFlex">
+		<header id="header">
+			<div class="header">
+				<span class="ico_back"></span>
+				<h1>我的财</h1>
+			</div>
+		</header>
+		<div class="container h_hd boxBg_3">
+			<ul class="boxLink">
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">卖蛋</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">帮师父加温</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">签到加温</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">卖鸡</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">放鸡入场</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">放蛋孵化</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">喂鸡</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">买鸡粮</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">徒弟加温</span>
+				</li>
+			</ul>
+			<div class="box_a">
+				<span class="box_a_img1"><img src="../common/images/boxImg_1.png" alt=""></span>
+				<span class="box_a_img2"><img src="../common/images/boxImg_2.png" alt=""></span>
+				<ul class="box_aCon">
+					<li><span class="ico"><img src="../common/images/ico_user.png" alt=""></span><p>个人资料</p></li>
+					<li><span class="colF60">1596</span><span class="spanFont">身份：徒弟</span><button class="btnG_s" onclick="show('boxPop')">我的门徒</button></li>
+					<li><span class="ico"><img src="../common/images/ico_rec.png" alt=""></span><p>招徒弟</p></li>
+				</ul>
+			</div>
+			<div class="box_a">
+				<span class="box_a_img1"><img src="../common/images/boxImg_1.png" alt=""></span>
+				<span class="box_a_img2"><img src="../common/images/boxImg_2.png" alt=""></span>
+				<ul class="box_aCon">
+					<li><span class="ico"><img src="../common/images/ico_ticket.png" alt=""></span><p>彩票流转</p></li>
+					<li><button class="btnG_s2">菜    票</button><span class="spanFont"><span class="colF60">0.0</span>元</span><button class="btnG_s" onclick="show('boxPop2')">历史挂单</button></li>
+					<li><span class="ico"><img src="../common/images/ico_cash.png" alt=""></span><p>提现</p></li>
+				</ul>
+			</div>
+			<div class="box_a">
+				<span class="box_a_img1"><img src="../common/images/boxImg_1.png" alt=""></span>
+				<span class="box_a_img2"><img src="../common/images/boxImg_2.png" alt=""></span>
+				<ul class="box_aCon">
+					<li><span class="ico"><img src="../common/images/ico_exchange.png" alt=""></span><p>换商品</p></li>
+					<li><button class="btnG_s2">积    分</button><span class="spanFont"><span class="colF60">0.0</span>元</span><button class="btnG_s">积分明细</button></li>
+					<li><span class="ico"><img src="../common/images/ico_cagPoints.png" alt=""></span><p>兑换积分</p></li>
+				</ul>
+			</div>
+			<div class="box_a boxTable">
+				<span class="box_a_img1"><img src="../common/images/boxImg_1.png" alt=""></span>
+				<span class="box_a_img2"><img src="../common/images/boxImg_2.png" alt=""></span>
+				<table class="tabBor">
+					<tr>
+						<td>在孵蛋</td>
+						<td class="colF60">0</td>
+						<td>市值</td>
+						<td class="colF60">0</td>
+					</tr>
+					<tr>
+						<td>在孵蛋</td>
+						<td class="colF60">0</td>
+						<td>市值</td>
+						<td class="colF60">0</td>
+					</tr>
+					<tr>
+						<td>在养鸡</td>
+						<td class="colF60">0</td>
+						<td>市值</td>
+						<td class="colF60">0</td>
+					</tr>
+					<tr>
+						<td>已售蛋</td>
+						<td class="colF60">0</td>
+						<td>市值</td>
+						<td class="colF60">0</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<footer id="footer">
+			<div class="footer">
+				<ul class="gameFoot">
+					<li><a href="javascript:void(0);">
+						<em class="ico_my"></em>
+						<p>我的菜</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_warehouse"></em>
+						<p>我的仓库</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_market"></em>
+						<p>菜市场</p>
+					</a></li>
+					<li class="cur"><a href="javascript:void(0);">
+						<em class="ico_money"></em>
+						<p>我的财</p>
+					</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- boxPop -->
+		<div id="boxPop" class="boxPop">
+			<div class="PopBox">
+				<h2>我的师徒们</h2>
+				<!-- <button class="btn_close" onclick="hide()"></button> -->
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop')"></a>
+				<div class="PopBoxCon">
+					<table class="tabBor">
+						<tr>
+							<th>我的师父</th>
+							<th>等级</th>
+							<th>蛋房/在孵</th>
+							<th>农场/在养</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+					<table class="tabBor">
+						<tr>
+							<th>我的师父</th>
+							<th>等级</th>
+							<th>蛋房/在孵</th>
+							<th>农场/在养</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+        <div id="boxPop2" class="boxPop">
+			<div class="PopBox">
+				<h2>历史挂单</h2>
+				<!-- <button class="btn_close" onclick="hide()"></button> -->
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop2')"></a>
+				<div class="PopBoxCon">
+					<table class="tabBor">
+						<tr>
+							<th>时间</th>
+							<th>事件</th>
+							<th>挂单总量</th>
+							<th>未成交量</th>
+							<th>状态</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

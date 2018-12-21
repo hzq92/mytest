@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>farmWap</title>
+		<!-- metatags -->
+		<meta name="keywords" content="网页关键字" /> 
+		<meta name="description" content="网页描述文字" /> 
+		<!-- **** Viewport **** -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="../../common/style/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../common/style/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/style/style.css"/>
+		<!-- JS -->
+	  	<script type="text/javascript" src="../../common/scripts/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../common/scripts/script.js"></script>
+	</head>
+	<body class="bodyBlue_4 bodyFlex">
+		<header id="header">
+			<div class="header">
+				<span class="ico_back"></span>
+				<h1>我的仓库</h1>
+			</div>
+		</header>
+		<div class="container h_hd containBox wareBox">
+			<ul class="boxLink2">
+				<li onclick="show('boxPop')">
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_l">买蛋</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">种蛋<input type="text" name="" placeholder="0" class="inpColFff w_hd58">只</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_r">孵化</span>
+				</li>
+				<li onclick="show('boxPop2')">
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_l">买鸡</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">种鸡<input type="text" name="" placeholder="0" class="inpColFff w_hd58">只</span>
+				</li>
+				<li onclick="show('boxPop6')">
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_r">放羊</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_l">蛋卷</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">商品蛋<input type="text" name="" placeholder="0" class="inpColFff">只</span>
+				</li>
+				<li onclick="show('boxPop7')">
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_r">出售</span>
+				</li>
+				<li onclick="show('boxPop3')">
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_l">出售</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">商品鸡<input type="text" name="" placeholder="0" class="inpColFff">只</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_r">出售</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_l">加温</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">在孵蛋<input type="text" name="" placeholder="0" class="inpColFff">只</span>
+				</li>
+				<li onclick="show('boxPop4')" class="bg_f60">
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_r">孵化房</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_l">买蛋</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">在养鸡<input type="text" name="" placeholder="0" class="inpColFff">只</span>
+				</li>
+				<li class="bg_f60">
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_r">养鸡场</span>
+				</li>
+				<li onclick="show('boxPop5')">
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_l">购粮</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft">鸡粮<input type="text" name="" placeholder="0" class="inpColFff w_hd58">只</span>
+				</li>
+				<li>
+					<span class="skew_bg"></span>
+					<span class="link_ft ico_arrow_r">喂鸡</span>
+				</li>
+			</ul>
+		</div>
+		<footer id="footer">
+			<div class="footer">
+				<ul class="gameFoot">
+					<li><a href="javascript:void(0);">
+						<em class="ico_my"></em>
+						<p>我的菜</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_warehouse"></em>
+						<p>我的仓库</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_market"></em>
+						<p>菜市场</p>
+					</a></li>
+					<li class="cur"><a href="javascript:void(0);">
+						<em class="ico_money"></em>
+						<p>我的财</p>
+					</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- boxPop -->
+		<div id="boxPop" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>购买种蛋</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">彩票余额：0.0元</p>
+						<p class="colF60">种蛋价格：2元/只</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop2" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>购买种鸡</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop2')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">彩票余额：0.0元</p>
+						<p class="colF60">种鸡价格：2元/只</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop2')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop3" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>出售商品鸡</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop3')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">彩票余额：0.0元</p>
+						<p class="colF60">出售价格：2.3元/只</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop3')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop4" class="boxPop">
+			<div class="PopBox PopBox2" style="top: 25%;">
+				<h2>放蛋孵化</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop4')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen t_l">1.点击确定，将把孵化的种蛋按顺序放入为满的孵化室，若孵化室已满则新建孵化室。<br /><br />2.如果要放入指定时间，清点击取消，进入孵化室，点添蛋逐间放入。</p>
+						<p class="colF60">种蛋数量：0个</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop4')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop5" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>购买鸡粮</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop5')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">鸡粮价格：0.1/份</p>
+						<p class="colF60">现有鸡粮0份</p>
+						<p class="colGreen">还需0分喂养一天</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop5')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop6" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>种鸡放羊</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop6')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">将种鸡放入农场</p>
+						<p class="colF60">农场还能容纳10000只</p>
+						<p class="colGreen">种鸡数量：0只</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop6')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop7" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>出售商品蛋</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop7')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">仓库有商品蛋：0个</p>
+						<p class="colF60">出售价格：2元/个</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop7')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

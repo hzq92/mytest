@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>farmWap</title>
+		<!-- metatags -->
+		<meta name="keywords" content="网页关键字" /> 
+		<meta name="description" content="网页描述文字" /> 
+		<!-- **** Viewport **** -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="../../common/style/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../common/style/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/style/style.css"/>
+		<!-- JS -->
+	  	<script type="text/javascript" src="../../common/scripts/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../common/scripts/script.js"></script>
+	</head>
+	<body class="bodyBlue_4 bodyFlex">
+		<header id="header">
+			<div class="header">
+				<h1>孵化房</h1>
+			</div>
+		</header>
+		<div class="container h_hd hatchBox">
+			<p class="hatchTxt">(共1间）孵化室976,28,0窝，0只<span class="ico_down"></span></p>
+			<div class="hatchNav">
+				<ul class="fl">
+					<li onclick="show('boxPop')"><a href="javascript:void(0);" class="hatchNav_egg"><span>蛋窝</span></a></li>
+					<li onclick="show('boxPop2')"><a href="javascript:void(0);" class="hatchNav_diary"><span>日记</span></a></li>
+					<li onclick="show('boxPop3')"><a href="javascript:void(0);" class="hatchNav_modify"><span>改名</span></a></li>
+					<li><a href="javascript:void(0);" class="hatchNav_humidity"><span>湿度</span></a></li>
+					<li><a href="javascript:void(0);" class="hatchNav_back"><span>返回</span></a></li>
+				</ul>
+				<ul class="fr">
+					<li><a href="javascript:void(0);" class="hatchNav_rature"><span>28℃</span></a></li>
+					<li onclick="show('boxPop6')"><a href="javascript:void(0);" class="hatchNav_sign"><span>签到</span></a></li>
+					<li onclick="show('boxPop7')"><a href="javascript:void(0);" class="hatchNav_add"><span>添加</span></a></li>
+					<li><a href="javascript:void(0);" class="hatchNav_close"><span>关闭</span></a></li>
+				</ul>
+			</div>
+			<button class="btn_goto"><span class="txtShad">去养鸡场</span><span class="ttlTxt">去养鸡场</span></button>
+		</div>
+		<footer id="footer">
+			<div class="footer">
+				<ul class="gameFoot">
+					<li><a href="javascript:void(0);">
+						<em class="ico_my"></em>
+						<p>我的菜</p>
+					</a></li>
+					<li class="cur"><a href="javascript:void(0);">
+						<em class="ico_warehouse"></em>
+						<p>我的仓库</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_market"></em>
+						<p>菜市场</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_money"></em>
+						<p>我的财</p>
+					</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- boxPop -->
+        <div id="boxPop" class="boxPop">
+			<div class="PopBox">
+				<h2>蛋窝情况</h2>
+				<!-- <button class="btn_close" onclick="hide()"></button> -->
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop')"></a>
+				<div class="PopBoxCon">
+					<table class="tabBor">
+						<tr>
+							<th>开始日期</th>
+							<th>现有</th>
+							<th>剩余天数</th>
+							<th>状态</th>
+							<th>臭蛋</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop2" class="boxPop">
+			<div class="PopBox" style="top: 20%;">
+				<h2>孵蛋日记</h2>
+				<!-- <button class="btn_close" onclick="hide()"></button> -->
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop2')"></a>
+				<div class="PopBoxCon">
+					<table class="tabBor">
+						<tr>
+							<th class="w1">开始日期</th>
+							<td class="w1">2007-07-04</td>
+							<td class="w1">2007-07-05</td>
+							<td class="w1"></td>
+						</tr>
+						<tr>
+							<th>放鸡数量</th>
+							<td>0个</td>
+							<td>0个</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>正常在孵</th>
+							<td>0个</td>
+							<td>0个</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>温度状况</th>
+							<td class="colGreen">28度</td>
+							<td class="colGreen">18度</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>本人签到</th>
+							<td>已签</td>
+							<td class="colF60">未签</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>徒弟帮助</th>
+							<td class="colF60">未帮</td>
+							<td class="colF60">未帮</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>恒湿器剩余</th>
+							<td>4天</td>
+							<td>4天</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>昨日臭蛋</th>
+							<td>0只</td>
+							<td>0只</td>
+							<td></td>
+						</tr>
+						<tr>
+							<th>浮出小鸡</th>
+							<td>0只</td>
+							<td>0只</td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop3" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>孵化室更改名</h2>
+				<a href="javascript:void(0);" class="btn_close" id="btn_close1" onclick="hide('boxPop3')"></a>
+				<div class="PopCon">
+					<p class="inpBox">
+						<input type="text" name="" class="popInput" placeholder="新农场名">
+					</p>
+					<p class="btnPop t_c">
+						<button class="btnS_g2">修改</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop6" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>提示</h2>
+				<a href="javascript:void(0);" class="btn_close" id="btn_close1" onclick="hide('boxPop6')"></a>
+				<div class="PopCon t_c colF60 signTxt">
+					今日已签到
+				</div>
+			</div>
+		</div>
+		<div id="boxPop7" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>添蛋至孵化室</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop7')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">该房间还能容纳100只</p>
+						<p class="colF60">种蛋数量0个</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop7')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

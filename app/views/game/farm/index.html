@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>farmWap</title>
+		<!-- metatags -->
+		<meta name="keywords" content="网页关键字" /> 
+		<meta name="description" content="网页描述文字" /> 
+		<!-- **** Viewport **** -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="../../common/style/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../common/style/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/style/style.css"/>
+		<!-- JS -->
+	  	<script type="text/javascript" src="../../common/scripts/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../common/scripts/script.js"></script>
+		<script src="../common/scripts/idangerous.swiper.min.js"></script> 
+	</head>
+	<body class="bodyBlue bodyFlex">
+		<header id="header">
+			<div class="header">
+				<h1>养鸡场</h1>
+			</div>
+		</header>
+		<div class="container h_hd farmBox">
+			<ul class="farmNav fr">
+				<li onclick="show('boxPop5')"><a href="javascript:void(0);" class="farmIco_warehouse">粮仓</a></li>
+				<li><a href="javascript:void(0);" class="farmIco_feed">喂鸡</a></li>
+			</ul>
+			<ul class="farmNav fl">
+				<li id="btnTab"><a href="javascript:void(0);" class="farmIco_time">成长</a></li>
+				<li><a href="javascript:void(0);" class="farmIco_diary">日记</a></li>
+				<li onclick="show('boxPop3')"><a href="javascript:void(0);" class="farmIco_modify">改名</a></li>
+				<li onclick="show('boxPop4')"><a href="javascript:void(0);" class="farmIco_stocking">放鸡</a></li>
+			</ul>
+		</div>
+		<footer id="footer">
+			<div class="footer">
+				<ul class="gameFoot">
+					<li><a href="javascript:void(0);">
+						<em class="ico_my"></em>
+						<p>我的菜</p>
+					</a></li>
+					<li class="cur"><a href="javascript:void(0);">
+						<em class="ico_warehouse"></em>
+						<p>我的仓库</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_market"></em>
+						<p>菜市场</p>
+					</a></li>
+					<li><a href="javascript:void(0);">
+						<em class="ico_money"></em>
+						<p>我的财</p>
+					</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- boxPop -->
+        <div id="boxPop" class="boxPop">
+			<div class="PopBox">
+				<h2>养鸡批次情况</h2>
+				<!-- <button class="btn_close" onclick="hide()"></button> -->
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop')"></a>
+				<div class="PopBoxCon">
+				    <div class="swiper-container">
+				        <div class="swiper-wrapper">
+					        <div class="swiper-slide">
+					        	<div class="content-slide">
+					            	<table class="tabBor">
+										<tr>
+											<th>开始日期</th>
+											<th>现有</th>
+											<th>成长天数</th>
+											<th>今日状态</th>
+											<th>损失鸡</th>
+											<th>收获蛋</th>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</table>
+					        	</div>
+					        </div>
+					        <div class="swiper-slide">
+					            <div class="content-slide">
+					            	<table class="tabBor">
+										<tr>
+											<th class="w1">开始日期</th>
+											<td class="w1">2007-07-04</td>
+											<td class="w1"></td>
+											<td class="w1"></td>
+										</tr>
+										<tr>
+											<td>放鸡数量</td>
+											<td>0</td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<th>饲料余量</th>
+											<td>0</td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td>喂养情况</td>
+											<td>0</td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<th>今日饿晕</th>
+											<td>0</td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<th>产出鸡蛋</th>
+											<td>0</td>
+											<td></td>
+											<td></td>
+										</tr>
+									</table>
+					            </div>
+					        </div>
+					        <div class="swiper-slide">
+					            <div class="content-slide">
+					            	<table class="tabBor">
+										<tr>
+											<th>开始日期</th>
+											<th>现有</th>
+											<th>成长天数</th>
+											<th>今日状态</th>
+											<th>损失鸡</th>
+											<th>收获蛋</th>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+										<tr>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+											<td></td>
+										</tr>
+									</table>
+					            </div>
+					        </div>
+				    	</div>
+					</div>
+					<div class="tabs">
+				        <a href="#" class="active">1</a>
+				        <a href="#">2</a>
+				        <a href="#">3</a>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop3" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>养鸡厂更改名</h2>
+				<a href="javascript:void(0);" class="btn_close" id="btn_close1" onclick="hide('boxPop3')"></a>
+				<div class="PopCon">
+					<p class="inpBox">
+						<input type="text" name="" class="popInput" placeholder="农场背景">
+						<input type="text" name="" class="popInput" placeholder="新农场名">
+					</p>
+					<p class="btnPop t_c">
+						<button class="btnS_g2">修改</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop4" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>放鸡至农场</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop4')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">农场还能容纳100000只</p>
+						<p class="colF60">养鸡数量0只</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop4')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="boxPop5" class="boxPop">
+			<div class="PopBox PopBox2">
+				<h2>放鸡至农场</h2>
+				<a href="javascript:void(0);" class="btn_close" onclick="hide('boxPop5')"></a>
+				<div class="PopCon t_c">
+					<div class="popTxt">
+						<p class="colGreen">鸡粮价格：0.1/份</p>
+						<p class="colF60">现有鸡粮0份</p>
+						<p class="colGreen">还需0分喂养一天</p>
+					</div>
+					<input type="text" name="" class="popInp_g" placeholder="输入不小于0的整数">
+					<p class="btnPop">
+						<button class="btnS_o" onclick="hide('boxPop5')">取消</button><button class="btnS_g">确定</button>
+					</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			function tab(){
+				$('#boxPop').show();
+				var tabsSwiper = new Swiper('.swiper-container',{
+					speed:500,
+					onSlideChangeStart: function(){
+						$(".tabs .active").removeClass('active');
+						$(".tabs a").eq(tabsSwiper.activeIndex).addClass('active');
+					}
+				});
+
+				$(".tabs a").on('touchstart mousedown',function(e){
+					e.preventDefault()
+					$(".tabs .active").removeClass('active');
+					$(this).addClass('active');
+					tabsSwiper.swipeTo($(this).index());
+				});
+
+				$(".tabs a").click(function(e){
+					e.preventDefault();
+				});
+			}
+			tab();
+			$('#boxPop').hide();
+			$(function(){
+			  $('#btnTab').click(function(event){
+			    $('#boxPop').show();
+			  })
+			});
+		</script>
+		<!-- 代码部分end -->
+	</body>
+</html>

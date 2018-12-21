@@ -1,0 +1,74 @@
+.spinner {
+	width: 28%;
+	height: 20px;
+	border: 1px solid #ddd;
+	overflow: hidden;
+	*zoom:1;
+}
+.spinner button, .spinner .value {
+	text-align: center;
+	display: block;
+	float: left;
+	height: 100%;
+}
+.spinner button {
+	width: 24.5%;
+	height: 20px;
+	color: #555;
+	cursor: pointer;
+	text-indent: -10000px;
+}
+.spinner .decrease {
+	background: url(../../img/btn_minus.png) no-repeat center center/10px auto;
+	border-right: 1px solid #ddd;
+}
+.spinner .decrease[disabled] {
+	background: url(../../img/btn_disabled.png) no-repeat center center/10px auto;
+	cursor: default;
+}
+.spinner .increase {
+	background: url(../../img/btn_add.png) no-repeat center center/10px auto;
+	border-left: 1px solid #ddd;
+}
+.spinner .value {
+	width: 40%;
+	height: 20px;
+	padding: 0 5%;
+	color: #555;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+.spinner .value.passive {
+	color: #999;
+}
+.spinner .error, .spinner .invalid {
+	background: #aa0000;
+}
+
+/*iphone6*/
+@media (min-device-width:375px) and (max-device-width:667px) and (-webkit-min-device-pixel-ratio:2){
+	.spinner, .spinner button, .spinner .value{
+		height: 24px;
+	}
+	.spinner .decrease, .spinner .increase{
+		background-size: 11px auto;
+	}
+	.spinner .value{
+		font-size: 15px;
+		font-size: 1.5rem;
+	}
+}
+
+/*iphone6plus*/
+@media (min-device-width:414px) and (max-device-width:736px) and (-webkit-min-device-pixel-ratio:3){
+	.spinner, .spinner button, .spinner .value{
+		height: 26px;
+	}
+	.spinner .decrease, .spinner .increase{
+		background-size: 12px auto;
+	}
+	.spinner .value{
+		font-size: 17px;
+		font-size: 1.7rem;
+	}
+}

@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* ============================================
+1. reset
+============================================ */
+* {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-tap-highlight-color: transparent; /* For some Androids */
+        outline: none;
+}
+
+html, body, div, span,applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, main,menu, nav, section, summary, time, mark, audio, video {
+    margin:0; padding:0; border:0; outline:0; vertical-align: baseline; background:transparent;
+}
+html{ font-size:62.5%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+body {font-family:  "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; 
+  font-size:12px;
+  font-size:1.2rem;
+  color:#333;
+  -webkit-text-size-adjust:none;
+   height: 100%; 
+ /*-webkit-overflow-scrolling: touch;*/
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section, summary  { display:block;}
+
+audio, canvas, progress, video{display: inline-block; vertical-align: baseline;}
+audio:not([controls]){display: none; height: 0;}
+[hidden], template{display: none;}
+svg:not(:root){overflow: hidden;}
+
+fieldset,img{border:0;}
+
+blockquote, q { quotes:none;}
+blockquote:before, blockquote:after,q:before, q:after { content:''; content:none;}
+
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal; font-weight:normal;}
+
+table{border-collapse:collapse; border-spacing:0;}
+/*td, th { padding: 0; }*/
+
+ul,ol { list-style:none;}
+
+caption,th{text-align:left;}
+
+select,input,textarea{font-size:12px; font-size:1.2rem;}
+
+input::-moz-placeholder, textarea::-moz-placeholder { color: #ccc; }
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #ccc; }
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #ccc; }
+
+input, select {vertical-align: middle;}
+input,textarea { outline:none; word-wrap:break-word; word-break:break-all;}
+/*textarea { resize: none;}*/
+input,textarea,button { border: 0; margin:0; padding:0; background: transparent; -webkit-appearance:none; font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif, "Microsoft YaHei"; }
+
+b,strong{font-weight:bold;}
+
+em{ font-style:normal !important;}
+
+a { background: transparent; text-decoration: none; color: #000; }
+a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+a:link,a:visited{color:#333; text-decoration:none;}
+a:focus { outline:none; -moz-outline:none;}
+a:hover,a:active{ color:#333;}
+a:active { outline: 0; }
+
+img { max-width:100%; vertical-align:text-bottom; line-height: 0;}
+
+pre{ line-height:1.1;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted; cursor: help;}
+
+del {text-decoration: line-through;}
+*:focus{border:0 none;background:none}
+*::selection { background:#3669ae;color:#fff;}
+*::-moz-selection {background:#3669ae;color: #fff;}
+
+/* ---------- clear ---------- */
+.clear {clear: both;}
+
+/* -------- clearfix -------- */
+.clearfix:after{content:"."; display:block; height:0; line-height:0; clear:both; visibility:hidden;}
+.clearfix{display:inline-block; clear:both; min-height:1%;  /* for IE 7*/}
+
+/* Hides from IE-mac */
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+  /* End hide from IE-mac */
